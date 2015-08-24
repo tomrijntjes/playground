@@ -5,7 +5,6 @@ color[] palette = {#FFFF66, #FFB366, #FF6666, #FF66B3, #66FFB3, #66B3FF};
 
 void setup(){
   jProcessingJS(this);
-  
   noStroke();
   boxx = 1 + width / boxsize;
   boxy = 1 + height / boxsize;

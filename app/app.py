@@ -3,12 +3,11 @@ from flask import Flask, jsonify, request,render_template, safe_join, send_from_
 
 app = Flask(__name__)
 
-@app.route('/<any(css, img, js, sound):folder>/<path:filename>')
-def toplevel_static(folder, filename):
-    filename = safe_join(folder, filename)
-    cache_timeout = app.get_send_file_max_age(filename)
-    return send_from_directory(app.static_folder, filename,
-                               cache_timeout=cache_timeout)
+"""
+@app.route('/js/<path:path>')
+def send_js(path):
+    return send_from_directory('js', path)
+"""
 
 @app.route('/')
 def index():

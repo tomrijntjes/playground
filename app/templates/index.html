@@ -4,17 +4,17 @@
 <title>Tom Rijntjes - Freelance Data Scientist</title>
 <style type="text/css">
   body {margin:0; padding:0;} /* remove top and left whitespace */
-  canvas {display:block; position:fixed; top:0px; left:0px; bottom:0px; right:0px;} 
+  canvas {display:block; position:fixed; top:0px; left:0px; bottom:0px; right:0px; width: 100%; height: 100%;} 
   canvas:focus {outline:0;} /* remove blue outline around canvas */
   .fs {position:fixed; right:50px; bottom:50px; font-size: 200%;}
   #enter {display:block;}
   #exit {display:none;}
-</style>  
-<script src="/js/processing.min.js"></script>
-<script type="text/javascript" src="js/jprocessingjs-0.9.min.js"></script>
+</style>
+<script src=/static/js/processing.min.js></script>
+<script src=/static/js/jprocessingjs-0.9.min.js></script>
 </head>
 <body>
-<canvas id="canv" data-processing-sources="/js/gen_art.pde">
+<canvas width ="100%" id="canv" data-processing-sources="static/js/gen_art.pde">
 <h1>(There would be some art here if your web browser
 supported the HTML5 canvas tag.)</h1>
 </canvas>
